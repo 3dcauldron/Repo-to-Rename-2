@@ -57,8 +57,6 @@ INSTALLED_APPS = [
     
     'rest_framework_swagger',
     
-    'gcode_access',
-    
     #allauth
     'allauth',
     'allauth.account',
