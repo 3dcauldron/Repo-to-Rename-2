@@ -74,4 +74,3 @@ djangorestframework==3.6.3
 pygments==2.2.0
 django-rest-swagger
 django-allauth
-uwsgi
