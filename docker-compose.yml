@@ -1,32 +1,17 @@
 version: '3'
 
 services:
-  nginx:
-    image: nginx:latest
-    container_name: ng01
-    restart: always
-    ports:
-      - "8050:8050"
-    volumes:
-      - .:/code
-      - ./nginxconfig:/etc/nginx/conf.d
-      - ./staticfiles:/static
-    depends_on:
-      - web
   web:
     build: .
     container_name: dg01
-    restart: always
-    command: bash -c "python manage.py migrate --run-syncdb && uwsgi --ini uwsgi.ini"
+    command: bash -c "python manage.py migrate --run-syncdb && python manage.py runserver 0:8000"
     depends_on:
       - db
     volumes:
       - .:/code
-      - ./staticfiles:/static
     expose:
-      - "8050"
+      - "8000"
 
   db:
     image: postgres:latest
     container_name: ps01
-    restart: always

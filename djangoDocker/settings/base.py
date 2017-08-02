@@ -21,7 +21,7 @@ SECURE_HSTS_PRELOAD = True
 DEBUG = True
 
 ADMINS = (
-    ('Admin', 'jsphlawsn@gmail.com'),
+    (),
 )
 
 AUTH_USER_MODEL = 'users.User'
@@ -62,8 +62,6 @@ INSTALLED_APPS = [
     #allauth
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
-    #'allauth.socialaccount.providers.facebook',
 
 ]
 
