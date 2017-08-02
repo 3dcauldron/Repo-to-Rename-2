@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: .
-    container_name: dg01
+    container_name: django01
     command: bash -c "python manage.py migrate --run-syncdb && python manage.py runserver 0:8000"
     depends_on:
       - db
@@ -14,4 +14,4 @@ services:
 
   db:
     image: postgres:latest
-    container_name: ps01
+    container_name: postgres01
