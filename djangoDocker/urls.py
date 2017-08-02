@@ -8,7 +8,6 @@ from userapi import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^djangojs/', include('djangojs.urls')),
-    url(r'^gcode_access/', include('gcode_access.urls')),
     url(r'^users/', views.UserList.as_view()),
     url(r'^users/(?P<pk>[0-9]+)/$', views.UserDetail.as_view()),
     url(r'^swaggerapp/', include('swaggerapp.urls')),
