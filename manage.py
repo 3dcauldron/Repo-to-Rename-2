@@ -12,10 +12,10 @@ if __name__ == "__main__":
     if sys.argv[1] == 'test':
         if settings_module:
             print("Ignoring config('DJANGO_SETTINGS_MODULE') because it's test. "
-                  "Using 'djangoDocker.settings.test'")
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoDocker.settings.test")
+                  "Using 'project_name.settings.test'")
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project_name.settings.test")
     else:
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", 'djangoDocker.settings.local_base')
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", 'project_name.settings.local_base')
 
     from django.core.management import execute_from_command_line
 
