@@ -32,6 +32,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
+# * allows all hosts. It's best to change this to your own value in production.
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
@@ -62,10 +63,10 @@ INSTALLED_APPS = [
     'allauth.account',
 
 ]
-
+# Default Postgres DB
 DATABASES = {  
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres',
         'HOST': 'db',
