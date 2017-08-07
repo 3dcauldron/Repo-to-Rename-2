@@ -1,22 +1,28 @@
 # Name Coming Soon
 ## About
-A Django 1.10 Project capable of hosting an array of applications
-## Tools used
+A Django 1.10 Project Built off of [Django React Boilerplate](https://github.com/vintasoftware/django-react-boilerplate) that incorporates a few more helpful libraries and tools like:
 
-- Django React Boilerplate (https://github.com/vintasoftware/django-react-boilerplate)
-- Swagger (URL)
-- Docker (https://www.docker.com/) for easy setup
-- Allauth (https://github.com/pennersr/django-allauth) for secure user authentication
-## Getting Started with Docker
+- [Swagger](https://swagger.io/) for API development
+- [Docker](https://www.docker.com/) for easy installation
+- [Allauth](https://github.com/pennersr/django-allauth) for secure user authentication
 
-- Make sure you have docker previously installed
-- Clone or download project
-- navigate to root of project
-- run "docker-compose build" to make the docker image
-- run "docker-compose up -d" to run Django and Postgres containers
+## Getting Started
+
+### Prerequisites
+
+- A copy of Docker or Docker toolbox, found [here](https://www.docker.com/get-docker).
+
+### Installing
+
+- Clone or download project to local repo
+- navigate to root of project in command line (cd repo-to-rename)
+- run "docker-compose up " to run Django and Postgres containers
 - run "docker-compose stop" to stop containers and "docker-compose start" to start them back up again
 - run "docker-compose build" to rebuild after making changes
 
-## Getting Started without Docker
+By default, "docker-compose up" will begin the django development server on 0.0.0.0:8000. Navigate there with your web browser to confirm installation.
 
-- Follow Project bootstrap steps from Django React Boilerplate
+## Authors
+* **Marshall Hull**
+* **Erik Kellogg**
+* **Joseph Lawson**
