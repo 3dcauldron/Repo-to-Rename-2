@@ -4,7 +4,7 @@ from rest_framework.schemas import SchemaGenerator
 from rest_framework.views import APIView
 from rest_framework_swagger import renderers
 
-
+#Built through the quickstart tutorial at https://django-rest-swagger.readthedocs.io/en/latest/#quick-start
 class SwaggerSchemaView(APIView):
     permission_classes = [IsAdminUser]
     renderer_classes = [
