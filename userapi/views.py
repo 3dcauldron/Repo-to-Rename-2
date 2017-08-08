@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAdminUser
 
+#Created using the tutorial at http://www.django-rest-framework.org/#tutorial
 class UserList(APIView):
     """
     List all users, or create a new user.
